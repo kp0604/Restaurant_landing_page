@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.mainSec {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px;
+}
+
+.txt1 {
+  font-family: "Abril Fatface", cursive;
+  padding: 0px 0px 0px 10px;
+  font-size: 60px;
+  align-self: center;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.txt2 {
+  font-size: 15px;
+  font-family: "Nanum Gothic 700", sans-serif;
+  color: #949494;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  align-self: center;
+  justify-self: center;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.txt2 p {
+  margin: 0px 0px 12px 0px;
+}
+
+.dash {
+  border: 1px solid #ff4b4b;
+  margin: 20px 0px 0px 0px;
+  width: 55px;
+}
+
+.foodSec {
+  display: flex;
+  flex-wrap: wrap;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.Card {
+  width: 145px;
+  height: 180px;
+  margin: 10px 10px 15px 10px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10%;
+  box-shadow: 5px 10px 20px 10px lightGrey;
+  align-content: center;
+  align-items: center;
+  font-family: "Nanum Gothic 800", sans-serif;
+}
+
+.foodImage {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 15px 15px 20px 15px;
+}
+
+@media only screen and (max-width: 768px) {
+  .mainSec {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .txt1 {
+    font-size: 30px;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .txt2 {
+    font-size: 18px;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    justify-self: center;
+  }
+  .foodSec {
+    margin: 30px 0px 30px 0px;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    justify-content: center;
+  }
+}

@@ -1,10 +1,12 @@
 import "./styles.css";
+import Mainsec from "./components/MainSec.js";
+import Navbar from "./components/Navbar.js";
 
 export default function App() {
   return (
     <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
+      <Navbar />
+      <Mainsec />
     </div>
   );
 }
